@@ -1,21 +1,10 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_animate_prac/explicit_animate_crc.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+const _duration = Duration(milliseconds: 400);
+void main() => runApp(const MaterialApp(home: explicit_animate_crc()));
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World'),
-        ),
-      ),
-    );
-  }
-}
+
