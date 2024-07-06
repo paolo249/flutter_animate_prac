@@ -3,13 +3,13 @@ import 'dart:math';
 
 const _duration = Duration(milliseconds: 400);
 
-class explicit_animate_crc extends StatefulWidget {
-  const explicit_animate_crc({super.key});
+class ExplicitAnimateCircle extends StatefulWidget {
+  const ExplicitAnimateCircle({super.key});
   @override
-  State<explicit_animate_crc> createState() => _explicit_animate_crcState();
+  State<ExplicitAnimateCircle> createState() => _ExplicitAnimateCircleState();
 }
 
-class _explicit_animate_crcState extends State<explicit_animate_crc> {
+class _ExplicitAnimateCircleState extends State<ExplicitAnimateCircle> {
   // Create state variables for borderRadius & margin
   List<Circle> circleList = [];
   late Color randomColor;
@@ -114,14 +114,4 @@ class _CircleState extends State<Circle> with TickerProviderStateMixin {
       ),
     );
   }
-  // @override
-  // Widget build(BuildContext context) {
-  // return Container(
-  // width: widget.randomWidth,
-  // height: widget.randomHeight(),
-  // decoration: const BoxDecoration(
-  // color: Colors.pink,
-  // shape: BoxShape.circle,
-  // ));
-  // }
 }
