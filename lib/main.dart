@@ -30,7 +30,7 @@ class _FlutterAnimateCircleState extends State<FlutterAnimateCircle> {
   late double randomWidth;
 
   // Property of the screen size (Overall)
-  late Size screenSize = MediaQuery.of(context as BuildContext).size;
+  late Size screenSize = MediaQuery.of(context).size;
 
   void randomCircleAttributes() {
     int red = Random().nextInt(254) + 1;
