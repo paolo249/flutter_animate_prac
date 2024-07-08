@@ -3,7 +3,12 @@ import 'dart:math';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_animate_prac/explicit_animate_crc.dart';
 
-const _duration = Duration(milliseconds: 400);
+
+
+// CURRENTLY TESTING WITH FLUTTER_ANIMATE PACKAGE
+
+// UNCOMMENT TO TEST EXPLICIT VERSION
+// const _duration = Duration(milliseconds: 400);
 // void main() => runApp(const MaterialApp(home: ExplicitAnimateCircle()));
 void main() => runApp(const MaterialApp(home: FlutterAnimateCircle()));
 
@@ -72,7 +77,7 @@ class _FlutterAnimateCircleState extends State<FlutterAnimateCircle> {
           ),
           ElevatedButton(
             onPressed: randomCircleAttributes,
-            child: const Text('Button'),
+            child: const Text('CLICK FLUTTER_ANIMATE TEST'),
           )
         ]);
   }
@@ -97,24 +102,17 @@ class Circle extends StatefulWidget {
 
 class _CircleState extends State<Circle> {
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Positioned(
-        top: widget.randomHeight,
-        left: widget.randomWidth,
-        child: Container(
-          width: widget.randomDiameter,
-          height: widget.randomDiameter,
-          decoration: BoxDecoration(
-              shape: BoxShape.circle, color: widget.randomColor),
-        )
-        .animate()
-        .fade(duration: 1000.ms),
-      );
+      top: widget.randomHeight,
+      left: widget.randomWidth,
+      child: Container(
+        width: widget.randomDiameter,
+        height: widget.randomDiameter,
+        decoration:
+            BoxDecoration(shape: BoxShape.circle, color: widget.randomColor),
+      ).animate().fade(duration: 1000.ms),
+    );
   }
 }
 

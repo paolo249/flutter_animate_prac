@@ -54,7 +54,7 @@ class _ExplicitAnimateCircleState extends State<ExplicitAnimateCircle> {
           ),
           ElevatedButton(
             onPressed: randomCircleAttributes,
-            child: const Text('Button'),
+            child: const Text('CLICK EXPLICIT ANIMATE TEST'),
           )
         ]);
   }
